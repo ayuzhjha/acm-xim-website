@@ -1,7 +1,37 @@
 import React, { useState } from "react";
 
-// --- Data Section: Team Member Data ---
-// This data structure defines all members and their roles.
+// --- Icon Definitions (New Addition for professional look) ---
+const Icons = {
+    // Email Icon (Envelope)
+    Email: (props) => (
+        <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.263a2 2 0 002.22 0L21 8m-2 10a2 2 0 01-2 2H7a2 2 0 01-2-2V8a2 2 0 012-2h10a2 2 0 012 2v10z" />
+        </svg>
+    ),
+    // LinkedIn Icon (Outline)
+    LinkedIn: (props) => (
+        <svg {...props} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.484 2.5C1.107 6 0 4.881 0 3.5S1.107 1 2.496 1C3.882 1 4.98 2.119 4.98 3.5zm-.103 5.485H.116v14.45h4.76V8.985zM14.07 8.985h-4.32V12.9h.194l.035.093c.47-1.156 1.63-2.32 3.824-2.32 2.76 0 4.85 1.83 4.85 5.72v6.622h-4.757v-6.32c0-1.503-.535-2.527-1.884-2.527-1.025 0-1.63.743-1.897 1.46-.1.26-.12.62-.12.983v6.404H8.815V14.54c0-2.82 1.93-3.665 3.33-3.665s2.03.49 2.03.49l.06-.05v.025h.19v-2.353z" />
+        </svg>
+    ),
+    // GitHub Icon (Outline)
+    GitHub: (props) => (
+        <svg {...props} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.383-1.332-1.752-1.332-1.752-1.088-.745.083-.73.083-.73 1.205.084 1.838 1.234 1.838 1.234 1.07 1.836 2.81 1.305 3.493.998.108-.775.42-1.306.762-1.608-2.665-.3-5.466-1.33-5.466-5.93 0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.52.116-3.18 0 0 1.006-.32 3.3.123 1.02-.28 2.09-.42 3.16-.42s2.14.14 3.16.42c2.292-.443 3.3-.123 3.3-.123.653 1.66.24 2.877.12 3.18.77.84 1.234 1.91 1.234 3.22 0 4.61-2.805 5.625-5.475 5.923.43.37.82 1.1.82 2.22 0 1.608-.015 2.898-.015 3.287 0 .318.216.694.825.575C20.565 21.8 24 17.302 24 12c0-6.627-5.373-12-12-12z" clipRule="evenodd" />
+        </svg>
+    ),
+    // Google Site Icon (Simplified Google Apps/Dot icon for Site)
+    GoogleSite: (props) => (
+        <svg {...props} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8 6a6 6 0 100-12 6 6 0 000 12z" clipRule="evenodd" />
+            <path d="M22 21h-2v-4a2 2 0 00-2-2h-2v2h2v4h2v2h2v-2z" />
+        </svg>
+    )
+};
+
+
+// --- Data Section: Team Member Data (From Part 1) ---
 
 const memberTeamsData = {
     tech: [
@@ -43,7 +73,7 @@ const allGeneralMembers = [
 ];
 
 
-// --- Team Sections Configuration ---
+// --- Team Sections Configuration (From Part 1) ---
 const teamSections = [
     {
         title: "Faculty Sponsor & Mentor",
@@ -261,58 +291,38 @@ const teamSections = [
                 teamName: "Events Team",
                 description: "Planning, logistics, and execution of all workshops, hackathons, and tech talks.",
                 members: memberTeamsData.events,
-                colorClass: "text-blue-600 border-blue-200",
+                colorClass: "text-red-600 border-red-200",
             },
             {
                 teamName: "Content & Support Team",
                 description: "Creating engaging content, writing articles, and providing membership support.",
                 members: memberTeamsData.contentAndSupport,
-                colorClass: "text-blue-600 border-blue-200",
+                colorClass: "text-green-600 border-green-200",
             },
             {
                 teamName: "Media & PR Team",
                 description: "Managing social media, graphic design, photography, and external communication.",
                 members: memberTeamsData.mediaAndPR,
-                colorClass: "text-blue-600 border-blue-200",
+                colorClass: "text-orange-600 border-orange-200",
             }
         ]
     }
 ];
 
-// --- Component: Social Links ---
-// Renders common social media links for members. Uses the primary blue accent.
+// --- Component: Social Links (Updated to use Icons) ---
 const SocialLinks = ({ member, isFormal = false }) => (
     <div
-        className={`flex flex-wrap items-center justify-center gap-3 text-xs p-4 ${isFormal ? 'bg-transparent' : 'bg-blue-50/50'}`}
+        className={`flex flex-wrap items-center justify-center gap-4 p-4 ${isFormal ? 'bg-transparent' : 'bg-blue-50/50'}`}
     >
         {member.linkedin && (
             <a
                 href={member.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="px-4 py-1.5 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition duration-200 font-medium whitespace-nowrap"
+                className="text-blue-600 hover:text-blue-800 transition duration-200"
+                title="LinkedIn Profile"
             >
-                LinkedIn
-            </a>
-        )}
-        {member.email && (
-            <a
-                href={`mailto:${member.email}`}
-                target="_blank"
-                rel="noreferrer"
-                className="px-4 py-1.5 rounded-full border border-neutral-700 text-neutral-700 hover:bg-neutral-800 hover:text-white transition duration-200 font-medium whitespace-nowrap"
-            >
-                Email
-            </a>
-        )}
-        {member.googleSite && (
-            <a
-                href={member.googleSite}
-                target="_blank"
-                rel="noreferrer"
-                className="px-4 py-1.5 rounded-full border border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white transition duration-200 font-medium whitespace-nowrap"
-            >
-                Google Site
+                <Icons.LinkedIn className="h-6 w-6" />
             </a>
         )}
         {member.github && (
@@ -320,19 +330,45 @@ const SocialLinks = ({ member, isFormal = false }) => (
                 href={member.github}
                 target="_blank"
                 rel="noreferrer"
-                className="px-4 py-1.5 rounded-full border border-neutral-400 text-neutral-500 hover:bg-neutral-600 hover:text-white transition duration-200 font-medium whitespace-nowrap"
+                className="text-neutral-700 hover:text-black transition duration-200"
+                title="GitHub Profile"
             >
-                GitHub
+                <Icons.GitHub className="h-6 w-6" />
+            </a>
+        )}
+        {member.email && (
+            <a
+                href={`mailto:${member.email}`}
+                target="_blank"
+                rel="noreferrer"
+                className="text-red-500 hover:text-red-700 transition duration-200"
+                title="Email Address"
+            >
+                <Icons.Email className="h-6 w-6" />
+            </a>
+        )}
+        {member.googleSite && (
+            <a
+                href={member.googleSite}
+                target="_blank"
+                rel="noreferrer"
+                className="text-green-600 hover:text-green-800 transition duration-200"
+                title="Google Site"
+            >
+                <Icons.GoogleSite className="h-6 w-6" />
             </a>
         )}
     </div>
 );
 
 
-// --- Component: General Member Card ---
+// --- Component: General Member Card (Font/Style Adjusted) ---
 // Used for the specialized team members (Tech, Events, etc.).
 const GeneralMemberCard = ({ member, colorClass }) => {
     const accentColor = colorClass.split('-')[1];
+
+    // Extract base color (e.g., 'blue', 'red', 'green')
+    const baseColor = colorClass.split('-')[0].split('text-')[1];
 
     return (
         <div className="group relative h-full">
@@ -351,7 +387,6 @@ const GeneralMemberCard = ({ member, colorClass }) => {
             >
                 {/* Image - UPDATED FOR THIN BLACK CIRCLE */}
                 <div className="relative mb-4">
-                    {/* p-[1px] creates a very thin border. bg-black creates the black color. */}
                     <div
                         className={`
                             h-20 w-20 rounded-full p-[1px] shadow-sm 
@@ -368,26 +403,26 @@ const GeneralMemberCard = ({ member, colorClass }) => {
                     </div>
                 </div>
 
-                {/* Text */}
+                {/* Text - Using font-semibold for a more professional look */}
                 <div className="text-center space-y-1 flex-grow">
-                    <h3 className="text-lg font-bold tracking-tight text-neutral-900">
+                    <h3 className="text-lg font-semibold tracking-tight text-neutral-900">
                         {member.name}
                     </h3>
                     <div className="mx-auto w-10 h-0.5 bg-neutral-100 mt-1 mb-1" />
 
                     {/* Role (Team Name) */}
-                    <p className={`text-sm font-semibold pt-1 ${colorClass}`}>
+                    <p className={`text-sm font-medium pt-1 ${colorClass}`}>
                         {member.role || "Member"}
                     </p>
                 </div>
 
-                {/* Email Link */}
+                {/* Email Link (Icon only) */}
                 <a
                     href={`mailto:${member.email}`}
-                    className={`mt-4 px-3 py-1 text-xs rounded-full border border-neutral-400 text-neutral-600 hover:bg-neutral-100 transition duration-200 font-medium whitespace-nowrap`}
+                    className={`mt-4 w-8 h-8 flex items-center justify-center rounded-full text-red-600 hover:bg-red-50/70 transition duration-200`}
                     title={`Email ${member.name}`}
                 >
-                    Email
+                    <Icons.Email className="h-5 w-5" />
                 </a>
             </div>
         </div>
@@ -395,7 +430,7 @@ const GeneralMemberCard = ({ member, colorClass }) => {
 };
 
 
-// --- Component: Team Card (Used for Faculty, Supervisors, Office Bearers, Core Team) ---
+// --- Component: Team Card (Used for Faculty, Supervisors, Office Bearers, Core Team - Font/Style Adjusted) ---
 const TeamCard = ({ member, sectionTitle }) => {
     const isInteractive = sectionTitle === "Office Bearers" || sectionTitle === "Core Team";
     const isFormal = sectionTitle === "Faculty Sponsor & Mentor" || sectionTitle === "Supervisors";
@@ -459,13 +494,13 @@ const TeamCard = ({ member, sectionTitle }) => {
                             </div>
                         </div>
                     </div>
-                    {/* Text */}
+                    {/* Text - Updated to use font-semibold */}
                     <div className="text-center space-y-1 flex-grow mb-6">
-                        <h3 className="text-xl md:text-2xl font-black tracking-tight text-neutral-900">
+                        <h3 className="text-xl md:text-2xl font-extrabold tracking-tight text-neutral-900">
                             {member.name}
                         </h3>
                         {/* Professional role text in emerald green */}
-                        <p className="text-lg font-bold text-emerald-800 pt-1">
+                        <p className="text-lg font-semibold text-emerald-800 pt-1">
                             {member.role}
                         </p>
                         <div className="mx-auto w-16 h-0.5 bg-neutral-300 mt-2 mb-2" />
@@ -518,13 +553,13 @@ const TeamCard = ({ member, sectionTitle }) => {
                     </div>
                 </div>
 
-                {/* Text */}
+                {/* Text - Updated to use font-semibold */}
                 <div className="text-center space-y-1 flex-grow mb-6">
-                    <h3 className="text-xl md:text-2xl font-black tracking-tight text-neutral-900">
+                    <h3 className="text-xl md:text-2xl font-extrabold tracking-tight text-neutral-900">
                         {member.name}
                     </h3>
                     {/* Blue accent for Role */}
-                    <p className={`text-lg font-bold text-${accentPrimary} pt-1`}>
+                    <p className={`text-lg font-semibold text-${accentPrimary} pt-1`}>
                         {member.role}
                     </p>
                     <div className="mx-auto w-16 h-0.5 bg-neutral-200 mt-2 mb-2" />
@@ -651,16 +686,16 @@ const Page = () => {
                                                 </svg>
                                             </div>
 
-                                            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight">
+                                            <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-900 tracking-tight">
                                                 {section.title}
                                             </h2>
                                             {section.subtitle && (
-                                                <p className="text-sm text-neutral-500 mt-2 max-w-xl">
+                                                <p className="text-base font-medium text-neutral-500 mt-2 max-w-xl">
                                                     {section.subtitle}
                                                 </p>
                                             )}
                                             {section.accent && (
-                                                <span className="mt-4 px-4 py-1.5 rounded-full text-xs font-medium bg-white border border-blue-300 text-blue-700 shadow-sm">
+                                                <span className="mt-4 px-4 py-1.5 rounded-full text-xs font-semibold bg-white border border-blue-300 text-blue-700 shadow-sm">
                                                     {section.accent}
                                                 </span>
                                             )}
@@ -671,8 +706,8 @@ const Page = () => {
                                     <div className="space-y-16">
                                         {section.subTeams.map((subTeam) => (
                                             <div key={subTeam.teamName} className="space-y-6">
-                                                {/* Sub-team heading uses team color */}
-                                                <h3 className={`text-2xl font-bold text-center border-b-2 pb-2 ${subTeam.colorClass}`}>
+                                                {/* Sub-team heading uses font-extrabold */}
+                                                <h3 className={`text-2xl font-extrabold text-center border-b-2 pb-2 ${subTeam.colorClass}`}>
                                                     {subTeam.teamName}
                                                 </h3>
                                                 <p className="text-center text-neutral-600 max-w-3xl mx-auto">
@@ -720,16 +755,16 @@ const Page = () => {
                                             </svg>
                                         </div>
 
-                                        <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight">
+                                        <h2 className="text-3xl md:text-4xl font-extrabold text-neutral-900 tracking-tight">
                                             {section.title}
                                         </h2>
                                         {section.subtitle && (
-                                            <p className="text-sm text-neutral-500 mt-2 max-w-xl">
+                                            <p className="text-base font-medium text-neutral-500 mt-2 max-w-xl">
                                                 {section.subtitle}
                                             </p>
                                         )}
                                         {section.accent && (
-                                            <span className="mt-4 px-4 py-1.5 rounded-full text-xs font-medium bg-white border border-blue-300 text-blue-700 shadow-sm">
+                                            <span className="mt-4 px-4 py-1.5 rounded-full text-xs font-semibold bg-white border border-blue-300 text-blue-700 shadow-sm">
                                                 {section.accent}
                                             </span>
                                         )}
