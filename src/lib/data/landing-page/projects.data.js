@@ -134,7 +134,7 @@ export const projectsData = [
         stack: ["Other Tech"],
         image: Img3,
       },
-      // ...add more projects as needed
+      // ...add more
     ],
   },
 ];

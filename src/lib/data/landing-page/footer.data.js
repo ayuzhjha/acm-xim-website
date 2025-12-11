@@ -24,7 +24,7 @@ export const aboutLinks = [
 export const eventLinks = [
   {
     label: "DSA Drill Saturdays (DDS)",
-    href: "/events/dsa-drill-saturdays", // internal page
+    href: "/events/dsa-drill-saturdays",
   },
   {
     label: "Project Development Hub",
@@ -84,7 +84,7 @@ export const connectLinks = [
 export const socialLinks = [
   {
     icon: Instagram,
-    href: "https://www.instagram.com/acm_xim", // update if different
+    href: "https://www.instagram.com/acm_xim",
   },
   {
     icon: Twitter,
