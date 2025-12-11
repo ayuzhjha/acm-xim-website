@@ -97,10 +97,10 @@ const Page = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
-              {/* Dark gradient overlay */}
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
-              {/* Content on top of image */}
+
               <div className="absolute bottom-0 p-8 text-white space-y-3">
                 <h2 className="text-3xl md:text-4xl font-bebas-neue tracking-wide">
                   Build. Learn. Lead.
@@ -115,11 +115,12 @@ const Page = () => {
           </div>
         </div>
 
-        {/* Responsive Google Map */}
+
         <div className="w-full py-16">
           <div className="relative pb-[36.25%] h-0 overflow-hidden rounded-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.4226499848887!2d85.75987517518922!3d20.15812041711182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19af103360ec8f%3A0x734b96dc8afdf0ef!2sXIM%20University!5e0!3m2!1sen!2sin!4v1753384545780!5m2!1sen!2sin"
+
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.661736737568!2d85.87413557500582!3d20.27419078129033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909a3219495b5%3A0x7d6560447cc3263!2sXIM%20University%2C%20Bhubaneswar!5e0!3m2!1sen!2sin!4v1701388800000!5m2!1sen!2sin"
               className="absolute top-0 left-0 w-full h-full border-0"
               allowFullScreen
               loading="lazy"
