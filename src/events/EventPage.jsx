@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import {
@@ -86,16 +85,6 @@ export default function EventPage() {
           {/* Main Content */}
 
           <div className="lg:col-span-2 space-y-8">
-            {/* Event Poster */}
-            {/* {event.posterImg && (
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img
-                  src={event.posterImg || "/placeholder.svg"}
-                  alt={`${event.title} poster`}
-                  className="w-full h-auto"
-                />
-              </div>
-            )} */}
 
             {/* Description */}
             <div className="bg-white rounded-xl shadow-lg p-6">
@@ -156,7 +145,6 @@ export default function EventPage() {
             )}
           </div>
 
-            
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Event Details */}
@@ -221,15 +209,14 @@ export default function EventPage() {
                     >
                       <div className="flex items-center gap-3">
                         <div
-                          className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                            index === 0
+                          className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${index === 0
                               ? "bg-yellow-100 text-yellow-800"
                               : index === 1
-                              ? "bg-slate-100 text-slate-800"
-                              : index === 2
-                              ? "bg-orange-100 text-orange-800"
-                              : "bg-slate-100 text-slate-600"
-                          }`}
+                                ? "bg-slate-100 text-slate-800"
+                                : index === 2
+                                  ? "bg-orange-100 text-orange-800"
+                                  : "bg-slate-100 text-slate-600"
+                            }`}
                         >
                           {index + 1}
                         </div>
@@ -249,12 +236,30 @@ export default function EventPage() {
             {/* Action Buttons */}
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="space-y-3">
+
+                {/* Register Link */}
                 <button className="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 cursor-pointer">
-                  Register Now
+                  <a
+                    href={event.registrationLink || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full h-full inline-block text-white"
+                  >
+                    Register Now
+                  </a>
                 </button>
+
+                {/* Share Event — Rulebook Download */}
                 <button className="w-full border-2 border-slate-200 hover:border-slate-300 text-slate-700 hover:text-slate-900 font-semibold py-3 px-6 rounded-lg transition-all duration-300 cursor-pointer">
-                  Share Event
+                  <a
+                    href={event.rulebook || "#"}
+                    download
+                    className="w-full h-full inline-block"
+                  >
+                    Event Rulebook
+                  </a>
                 </button>
+
               </div>
             </div>
           </div>
@@ -289,7 +294,7 @@ function FooterNavigation({ currentEvent }) {
             {currentEvent}
           </p>
         </a>
-        
+
         <a
           href="/"
           className="font-inter uppercase flex items-center group cursor-pointer"
@@ -305,18 +310,15 @@ function FooterNavigation({ currentEvent }) {
   );
 }
 
-
 function LoadingSkeleton() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <div className="container mx-auto px-4 py-8 max-w-6xl">
         <div className="animate-pulse">
-          {/* Hero skeleton */}
           <div className="h-96 bg-slate-200 rounded-2xl mb-12"></div>
 
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-8">
-              {/* Content skeletons */}
               <div className="h-64 bg-slate-200 rounded-xl"></div>
               <div className="h-32 bg-slate-200 rounded-xl"></div>
               <div className="h-48 bg-slate-200 rounded-xl"></div>

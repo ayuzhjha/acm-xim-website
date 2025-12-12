@@ -6,17 +6,20 @@
 
 const events = [
   // =========================================================================
-  // * 2025-26 (Current Session) - Including new events with Jan 2025 dates
+  // * 2025-26 Session (Current Session)
   // =========================================================================
   {
-    id: "dr-banik-talk-2025",
+    id: "dr-banik-talk-2d25",
     title: "Guest Talk by Dr. Aritra Banik (ACM Council)",
-    posterImg: "/assets/events/genai/poster.png", // Reusing placeholder
-    backgroundImg: "/assets/events/genai/bg.jpg", // Reusing placeholder
+    posterImg: "/assets/events/genai/poster.png",
+    backgroundImg: "/assets/events/genai/bg.jpg",
     venue: "Mini Auditorium",
     time: "January 11, 2025 | 10:00 AM – 11:00 AM",
     session: "2025-26",
     type: "Guest Talk",
+    registrationLink: "https://yourform.com",
+    rulebook: "/src/assets/rulebooks/rulebook.pdf",
+
     description:
       "A renowned computer science researcher and academic from NISER Bhubaneswar delivered an insightful talk on advanced algorithm design and computational challenges, inspiring fresh perspectives on efficient computing and research opportunities.",
     rulesAndRegulation: [
@@ -36,12 +39,14 @@ const events = [
   {
     id: "code-of-orbit-2025",
     title: "Code Of Orbit",
-    posterImg: "/assets/events/codesprint/poster.png", // Reusing placeholder
-    backgroundImg: "/assets/events/codesprint/bg.jpg", // Reusing placeholder
+    posterImg: "/assets/events/codesprint/poster.png",
+    backgroundImg: "/assets/events/codesprint/bg.jpg",
     venue: "LAB 5",
     time: "January 9, 2025 | 11:45 AM – 01:45 PM",
     session: "2025-26",
     type: "Coding Challenge",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A coding challenge consisting of three rounds designed to test participant’s skills in pattern printing, Data Structures & Algorithms (DSA), and debugging. Winners were determined by the highest score in the least amount of time.",
     rulesAndRegulation: [
@@ -66,6 +71,8 @@ const events = [
     time: "July 5, 2025 · 10:00 AM – 5:00 PM",
     session: "2025-26",
     type: "Coding Contest",
+    registrationLink: "",
+    rulebook: "",
     description:
       "CodeSprint 5.0 is ACM XIM’s annual coding marathon designed to push problem-solving skills to the next level. Participants compete in multiple rounds of competitive programming challenges, either solo or in a team of two.",
     rulesAndRegulation: [
@@ -94,6 +101,8 @@ const events = [
     time: "August 12, 2025 · 2:00 PM – 4:30 PM",
     session: "2025-26",
     type: "Tech Talk",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A thought-provoking session on Generative AI, large language models, and the ethical implications of modern AI systems. Includes live demos, an interactive Q&A, and networking with industry experts.",
     rulesAndRegulation: [
@@ -116,6 +125,8 @@ const events = [
     time: "September 1, 2025 · 9:00 AM – 6:00 PM",
     session: "2025-26",
     type: "Design Sprint",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A one-day design sprint where creativity meets usability. Teams design interactive UI/UX mockups for real-world problem statements using tools like Figma and Adobe XD.",
     rulesAndRegulation: [
@@ -144,6 +155,8 @@ const events = [
     time: "October 10–11, 2025 · 8:00 PM – 8:00 AM",
     session: "2025-26",
     type: "Hackathon",
+    registrationLink: "",
+    rulebook: "",
     description:
       "An overnight hackathon where teams build solutions to real-world problems. Work through the night, ship a prototype, and pitch your project to a panel of judges.",
     rulesAndRegulation: [
@@ -171,6 +184,8 @@ const events = [
     time: "November 15, 2025 · 3:00 PM – 5:00 PM",
     session: "2025-26",
     type: "Panel Discussion",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A panel featuring inspiring women in technology sharing their journeys, challenges, and advice for the next generation of tech leaders.",
     rulesAndRegulation: [
@@ -193,6 +208,8 @@ const events = [
     time: "December 2, 2025 · 11:00 AM – 2:00 PM",
     session: "2025-26",
     type: "Workshop",
+    registrationLink: "",
+    rulebook: "",
     description:
       "Learn how to visualize algorithms using JavaScript and D3.js. A hands-on workshop with live coding and interactive demos to make complex concepts intuitive.",
     rulesAndRegulation: [
@@ -205,17 +222,19 @@ const events = [
   },
 
   // =========================================================================
-  // * 2024-25 Session - Integrating new event details
+  // * 2024-25 Session (Total 11 Events)
   // =========================================================================
   {
     id: "dsa-drill-saturdays-2024",
     title: "DSA Drill Saturdays (DDS)",
-    posterImg: "/assets/events/legacy/dsa-drill.png", // Reusing placeholder
-    backgroundImg: "/assets/events/legacy/dsa-drill-bg.jpg", // Reusing placeholder
+    posterImg: "/assets/events/legacy/dsa-drill.png",
+    backgroundImg: "/assets/events/legacy/dsa-drill-bg.jpg",
     venue: "Hacker Rank",
     time: "Every Saturday (Starting Dec 14, 2024)",
     session: "2024-25",
     type: "Practice Series",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A weekly coding initiative focused on strengthening problem-solving skills through hands-on DSA practice and mentorship for technical interviews and competitive programming.",
     rulesAndRegulation: [
@@ -238,12 +257,14 @@ const events = [
   {
     id: "web-styledown-2024",
     title: "Web Styledown – CSS Styling Challenge Event",
-    posterImg: "/assets/events/legacy/webstyledown.png", // Placeholder
-    backgroundImg: "/assets/events/legacy/webstyledown-bg.jpg", // Placeholder
+    posterImg: "/assets/events/legacy/webstyledown.png",
+    backgroundImg: "/assets/events/legacy/webstyledown-bg.jpg",
     venue: "Online | Open Source",
     time: "Dec 6–8, 2024 (50-hour window)",
     session: "2024-25",
     type: "Design Challenge",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A CSS styling challenge where participants were given a pre-written HTML front-page template and had 50 hours to creatively style it, ensuring full responsiveness across all screen sizes.",
     rulesAndRegulation: [
@@ -263,12 +284,14 @@ const events = [
   {
     id: "codewave-2024",
     title: "CodeWave",
-    posterImg: "/assets/events/legacy/codewave.png", // Placeholder
-    backgroundImg: "/assets/events/legacy/codewave-bg.jpg", // Placeholder
+    posterImg: "/assets/events/legacy/codewave.png",
+    backgroundImg: "/assets/events/legacy/codewave-bg.jpg",
     venue: "LAB 5",
     time: "July 30, 2024 | 4:00 PM – 5:00 PM",
     session: "2024-25",
     type: "Coding Challenge",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A coding challenge where teams of 2 members competed in two rounds. Questions were structured based on the participants' academic years to test coding and logical thinking skills.",
     rulesAndRegulation: [
@@ -287,12 +310,14 @@ const events = [
   {
     id: "mind-spark-2024",
     title: "Mind Spark",
-    posterImg: "/assets/events/legacy/mindspark.png", // Placeholder
-    backgroundImg: "/assets/events/legacy/mindspark-bg.jpg", // Placeholder
+    posterImg: "/assets/events/legacy/mindspark.png",
+    backgroundImg: "/assets/events/legacy/mindspark-bg.jpg",
     venue: "CR – 301, 3rd floor new academic block",
     time: "July 2, 2024 | 4:00 PM – 5:00 PM",
     session: "2024-25",
     type: "Logical Challenge",
+    registrationLink: "",
+    rulebook: "",
     description:
       "An event designed to enhance thinking and logical abilities, focusing on problems that required participants to apply critical reasoning, systematic analysis, and creative problem-solving.",
     rulesAndRegulation: [
@@ -312,12 +337,14 @@ const events = [
   {
     id: "cracking-internships-2024",
     title: "Cracking Summer Internships with Coding Ninjas",
-    posterImg: "/assets/events/legacy/internship.png", // Placeholder
-    backgroundImg: "/assets/events/legacy/internship-bg.jpg", // Placeholder
+    posterImg: "/assets/events/legacy/internship.png",
+    backgroundImg: "/assets/events/legacy/internship-bg.jpg",
     venue: "Zoom Meeting",
     time: "May 27, 2024 | 6:00 PM – 7:00 PM",
     session: "2024-25",
     type: "Speaker Event",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A Speaker event in collaboration with Coding Ninjas, equipping participants with the essential knowledge and skills to excel in their summer internships and future career placements.",
     rulesAndRegulation: [
@@ -343,6 +370,8 @@ const events = [
     time: "February 10, 2024 · 10:00 AM – 4:00 PM",
     session: "2024-25",
     type: "Coding Contest",
+    registrationLink: "",
+    rulebook: "",
     description:
       "The fourth edition of CodeSprint, featuring timed problem-solving rounds, algorithmic challenges, and leaderboard-based competition.",
     rulesAndRegulation: [],
@@ -358,15 +387,82 @@ const events = [
     time: "March 15–16, 2024",
     session: "2024-25",
     type: "Tech Fest",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A two-day flagship tech fest featuring hackathons, design events, gaming competitions, and industry sessions.",
     rulesAndRegulation: [],
     leaderboard: [],
     gallery: [],
   },
+  {
+    id: "random-2024-a",
+    title: "Random Tech Workshop: Cloud Basics",
+    posterImg: "/assets/events/placeholder/cloud.png",
+    backgroundImg: "/assets/events/placeholder/cloud-bg.jpg",
+    venue: "Online/Google Meet",
+    time: "September 15, 2024 · 5:00 PM – 7:00 PM",
+    session: "2024-25",
+    type: "Workshop",
+    registrationLink: "",
+    rulebook: "",
+    description: "An introductory workshop covering the fundamentals of cloud computing, including AWS/Azure services and deployment models.",
+    rulesAndRegulation: ["Laptop required.", "Basic networking knowledge recommended."],
+    leaderboard: [],
+    gallery: [],
+  },
+  {
+    id: "random-2024-b",
+    title: "Quiz Mania: IT Edition",
+    posterImg: "/assets/events/placeholder/quiz.png",
+    backgroundImg: "/assets/events/placeholder/quiz-bg.jpg",
+    venue: "Seminar Hall 1",
+    time: "October 5, 2024 · 3:00 PM – 4:30 PM",
+    session: "2024-25",
+    type: "Quiz Competition",
+    registrationLink: "",
+    rulebook: "",
+    description: "A rapid-fire quiz testing knowledge in software history, famous algorithms, and current tech trends.",
+    rulesAndRegulation: ["Teams of 2 allowed.", "No electronic devices allowed during the quiz."],
+    leaderboard: [{ name: "Winner Team Alpha", prize: "Trophy + Books" }],
+    gallery: [],
+  },
+  {
+    id: "random-2024-c",
+    title: "Ethical Hacking 101 Session",
+    posterImg: "/assets/events/placeholder/security.png",
+    backgroundImg: "/assets/events/placeholder/security-bg.jpg",
+    venue: "Mini Auditorium",
+    time: "November 20, 2024 · 2:00 PM – 4:00 PM",
+    session: "2024-25",
+    type: "Seminar",
+    registrationLink: "",
+    rulebook: "",
+    description: "A beginner's seminar on cybersecurity, covering basic penetration testing and understanding common network vulnerabilities.",
+    rulesAndRegulation: ["Only for educational purposes.", "No live hacking is permitted."],
+    leaderboard: [],
+    gallery: [],
+  },
+  {
+    id: "random-2024-d",
+    title: "Project Showcase Day",
+    posterImg: "/assets/events/placeholder/showcase.png",
+    backgroundImg: "/assets/events/placeholder/showcase-bg.jpg",
+    venue: "Innovation Hub",
+    time: "December 1, 2024 · 10:00 AM – 1:00 PM",
+    session: "2024-25",
+    type: "Showcase",
+    registrationLink: "",
+    rulebook: "",
+    description: "An opportunity for students to exhibit their semester projects and receive feedback from faculty and peers.",
+    rulesAndRegulation: ["Projects must be functional.", "Poster presentation required."],
+    leaderboard: [{ name: "Best UI/UX Project", score: 95 }],
+    gallery: [],
+  },
+
 
   // =========================================================================
-  // * 2023-24 Session (Retained)
+  // * 2023-24 Session (Total 7 Events)
   // =========================================================================
   {
     id: "dsa-drill-2023",
@@ -377,6 +473,8 @@ const events = [
     time: "August – November 2023 · Every Saturday",
     session: "2023-24",
     type: "Practice Series",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A weekly problem-solving series focusing on core data structures and algorithms, preparing students for contests and interviews.",
     rulesAndRegulation: [],
@@ -392,9 +490,91 @@ const events = [
     time: "July 20, 2023 · 3:00 PM – 5:00 PM",
     session: "2023-24",
     type: "Orientation",
+    registrationLink: "",
+    rulebook: "",
     description:
       "A chapter orientation session introducing ACM, the ACM XIM Student Chapter, benefits of membership, and the annual roadmap of activities.",
     rulesAndRegulation: [],
+    leaderboard: [],
+    gallery: [],
+  },
+  {
+    id: "random-2023-a",
+    title: "Python for Beginners Workshop",
+    posterImg: "/assets/events/placeholder/python.png",
+    backgroundImg: "/assets/events/placeholder/python-bg.jpg",
+    venue: "Computer Lab 2",
+    time: "August 15, 2023 · 10:00 AM – 1:00 PM",
+    session: "2023-24",
+    type: "Workshop",
+    registrationLink: "",
+    rulebook: "",
+    description: "An intensive session on the basics of Python programming, covering syntax, data types, and control structures.",
+    rulesAndRegulation: ["Prior registration is mandatory.", "Basic programming logic required."],
+    leaderboard: [],
+    gallery: [],
+  },
+  {
+    id: "random-2023-b",
+    title: "Database Design Challenge",
+    posterImg: "/assets/events/placeholder/db.png",
+    backgroundImg: "/assets/events/placeholder/db-bg.jpg",
+    venue: "Lab 101, Block C",
+    time: "September 10, 2023 · 4:00 PM – 6:00 PM",
+    session: "2023-24",
+    type: "Competition",
+    registrationLink: "",
+    rulebook: "",
+    description: "A challenge focused on designing efficient relational schemas and writing complex SQL queries for real-world scenarios.",
+    rulesAndRegulation: ["Individual participation only.", "Submissions evaluated on normalization and query optimization."],
+    leaderboard: [{ name: "Database Master", prize: "ACM Merchandise" }],
+    gallery: [],
+  },
+  {
+    id: "random-2023-c",
+    title: "Career in Tech Panel Discussion",
+    posterImg: "/assets/events/placeholder/career.png",
+    backgroundImg: "/assets/events/placeholder/career-bg.jpg",
+    venue: "Conference Room 2",
+    time: "October 25, 2023 · 3:00 PM – 5:00 PM",
+    session: "2023-24",
+    type: "Panel Discussion",
+    registrationLink: "",
+    rulebook: "",
+    description: "Industry experts discussed career paths in software development, data science, and product management.",
+    rulesAndRegulation: ["Q&A session will follow the panel discussion."],
+    leaderboard: [],
+    gallery: [],
+  },
+  {
+    id: "random-2023-d",
+    title: "Competitive Coding Practice Session 1",
+    posterImg: "/assets/events/placeholder/cc.png",
+    backgroundImg: "/assets/events/placeholder/cc-bg.jpg",
+    venue: "Lab 204, Block E",
+    time: "November 5, 2023 · 6:00 PM – 8:00 PM",
+    session: "2023-24",
+    type: "Practice Session",
+    registrationLink: "",
+    rulebook: "",
+    description: "A guided practice session focusing on solving intermediate level competitive programming problems on platforms like Codeforces.",
+    rulesAndRegulation: ["Participants must attempt the problems independently first."],
+    leaderboard: [],
+    gallery: [],
+  },
+  {
+    id: "random-2023-e",
+    title: "Git and GitHub Basics Tutorial",
+    posterImg: "/assets/events/placeholder/git.png",
+    backgroundImg: "/assets/events/placeholder/git-bg.jpg",
+    venue: "Lab 5",
+    time: "December 1, 2023 · 11:00 AM – 1:00 PM",
+    session: "2023-24",
+    type: "Tutorial",
+    registrationLink: "",
+    rulebook: "",
+    description: "A hands-on tutorial to master version control using Git and collaborative development with GitHub.",
+    rulesAndRegulation: ["Laptop with Git installed is mandatory."],
     leaderboard: [],
     gallery: [],
   },
