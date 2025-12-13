@@ -1,4 +1,19 @@
 import React, { useState } from "react";
+import anupamImg from "../assets/Team_photos/Anupam_TechLead.jpg";
+import ayushImg from "../assets/Team_photos/AyushJha_DeputyTechLead.jpeg";
+import duaImg from "../assets/Team_photos/DuaRajat_DeputyEventsLead.jpg";
+import kaifImg from "../assets/Team_photos/kaif_Chairperson.jpg";
+import mohitImg from "../assets/Team_photos/MohitSingh_POC.jpg";
+import piyushImg from "../assets/Team_photos/Piyush_Convener.jpg";
+import prashantImg from "../assets/Team_photos/PrashantKumar_MediaPR.jpeg";
+import pritishaImg from "../assets/Team_photos/PritishaSarangi_DeputyContent.jpg";
+import priyanshuImg from "../assets/Team_photos/PriyanshuPati_Secretary.jpg";
+import sadhanaImg from "../assets/Team_photos/SADHANA_EventPOC.jpg";
+import shreyaImg from "../assets/Team_photos/Saishreya_Treasurer.jpg";
+import sakshiImg from "../assets/Team_photos/SakshiPandey_ContentLead.jpg";
+import siddhantImg from "../assets/Team_photos/Siddhant_Vice-Chairperson.jpg";
+import soumyaImg from "../assets/Team_photos/SoumyaSatapathy_EventsLead.jpg";
+import srimadImg from "../assets/Team_photos/srimad_OperationalLead.jpg";
 
 // --- Icon Definitions (New Addition for professional look) ---
 const Icons = {
@@ -117,8 +132,7 @@ const teamSections = [
                 email: "ucse23032@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/kaif-khurshid?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
                 github: "https://github.com/Kaifkhurshid7",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Kaif+Khurshid&background=2563eb&color=fff&size=256"
+                imageUrl: kaifImg
             },
             {
                 name: "Siddhant Pradhan",
@@ -127,8 +141,7 @@ const teamSections = [
                 email: "ucse23051@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/siddhant-pradhant691/",
                 github: "https://github.com/Sidd-ctrl",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Siddhant+Pradhan&background=db2777&color=fff&size=256"
+                imageUrl: siddhantImg
             },
             {
                 name: "Priyanshu Pati",
@@ -137,8 +150,7 @@ const teamSections = [
                 email: "ucse23043@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/priyanshupati/",
                 github: "https://github.com/Priyanshuu10",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Priyanshu+Pati&background=15803d&color=fff&size=256"
+                imageUrl: priyanshuImg
             }
 
         ]
@@ -179,8 +191,7 @@ const teamSections = [
                 email: "ucse24051@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/sai-shreya-mohanty-80721631a",
                 github: "https://github.com/shreyasaii",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Sai+Shreya+Mohanty&background=7c2d12&color=fff&size=256"
+                imageUrl: shreyaImg
             },
             {
                 name: "Piyush Nayak",
@@ -188,8 +199,7 @@ const teamSections = [
                 email: "ucse23039@stu.xim.edu.in",
                 linkedin: "",
                 github: "",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Piyush+Nayak&background=2563eb&color=fff&size=256"
+                imageUrl: piyushImg
             },
             {
                 name: "Anupam",
@@ -197,8 +207,7 @@ const teamSections = [
                 email: "",
                 linkedin: "",
                 github: "",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Anupam&background=2563eb&color=fff&size=256"
+                imageUrl: anupamImg
             },
             {
                 name: "Ayush Jha",
@@ -206,8 +215,7 @@ const teamSections = [
                 email: "ucse24017@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/ayuzhjha",
                 github: "https://github.com/decodingayush",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Ayush+Jha&background=9f1239&color=fff&size=256"
+                imageUrl: ayushImg
             },
             {
                 name: "Soumya Sathpathy",
@@ -215,8 +223,7 @@ const teamSections = [
                 email: "ucse23056@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/soumya-prakash-satapathy-b57b68284",
                 github: "https://github.com/Soumyasatapathy1819",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Soumya+Sathpathy&background=14532d&color=fff&size=256"
+                imageUrl: soumyaImg
             },
             {
                 name: "Dua Rajat",
@@ -224,8 +231,7 @@ const teamSections = [
                 email: "",
                 linkedin: "",
                 github: "",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Dua+Rajat&background=ef4444&color=fff&size=256"
+                imageUrl: duaImg
             },
             {
                 name: "Sakshi Pandey",
@@ -233,8 +239,7 @@ const teamSections = [
                 email: "ucse24052@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/sakshi-pandey-20263331a",
                 github: "https://github.com/Sakshi-230",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Sakshi+Pandey&background=1d4ed8&color=fff&size=256"
+                imageUrl: sakshiImg
             },
             {
                 name: "Pritisha Sarangi",
@@ -242,8 +247,7 @@ const teamSections = [
                 email: "ucse24045@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/pritisha-sarangi-4a29102b2",
                 github: "https://github.com/pritisha-a11y",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Pritisha+Sarangi&background=ea580c&color=fff&size=256"
+                imageUrl: pritishaImg
             },
             {
                 name: "Prashant Kumar",
@@ -251,8 +255,7 @@ const teamSections = [
                 email: "ucse24042@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/prashant-raj-0a7a90306/",
                 github: "https://github.com/prashantrajj1",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Prashant+Kumar&background=047857&color=fff&size=256"
+                imageUrl: prashantImg
             },
             {
                 name: "Srimad Nayak",
@@ -260,8 +263,7 @@ const teamSections = [
                 email: "ucse24061@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/srimadsnehashis",
                 github: "https://github.com/srimad1111",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Srimad+Nayak&background=0f766e&color=fff&size=256"
+                imageUrl: srimadImg
             },
             {
                 name: "Mohit Singh",
@@ -269,17 +271,15 @@ const teamSections = [
                 email: "ucse24033@stu.xim.edu.in",
                 linkedin: "https://www.linkedin.com/in/mohit-singh-6a190b317/",
                 github: "https://github.com/notsomohit",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Mohit+Singh&background=0f172a&color=fff&size=256"
+                imageUrl: mohitImg
             },
             {
                 name: "Sadhana Routary",
                 role: "POC",
-                email: "ucse24033@stu.xim.edu.in",
-                linkedin: "https://www.linkedin.com/in/mohit-singh-6a190b317/",
-                github: "https://github.com/notsomohit",
-                imageUrl:
-                    "https://ui-avatars.com/api/?name=Mohit+Singh&background=0f172a&color=fff&size=256"
+                email: "ucse24049@stu.xim.edu.in",
+                linkedin: "https://www.linkedin.com/in/sadhana-routray?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                github: "https://github.com/Sadhana2437",
+                imageUrl: sadhanaImg
             }
         ]
     },

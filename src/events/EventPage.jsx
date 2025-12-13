@@ -210,12 +210,12 @@ export default function EventPage() {
                       <div className="flex items-center gap-3">
                         <div
                           className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${index === 0
-                              ? "bg-yellow-100 text-yellow-800"
-                              : index === 1
-                                ? "bg-slate-100 text-slate-800"
-                                : index === 2
-                                  ? "bg-orange-100 text-orange-800"
-                                  : "bg-slate-100 text-slate-600"
+                            ? "bg-yellow-100 text-yellow-800"
+                            : index === 1
+                              ? "bg-slate-100 text-slate-800"
+                              : index === 2
+                                ? "bg-orange-100 text-orange-800"
+                                : "bg-slate-100 text-slate-600"
                             }`}
                         >
                           {index + 1}
@@ -224,9 +224,9 @@ export default function EventPage() {
                           {entry.name}
                         </span>
                       </div>
-                      <span className="px-2 py-1 bg-slate-200 text-slate-700 rounded-md text-sm font-medium">
+                      {/* <span className="px-2 py-1 bg-slate-200 text-slate-700 rounded-md text-sm font-medium">
                         {entry.score} pts
-                      </span>
+                      </span> */}
                     </div>
                   ))}
                 </div>

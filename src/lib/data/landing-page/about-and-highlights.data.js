@@ -12,7 +12,7 @@ export const MoreAbout = [
 
 export const HighlightsBottomGridData = [
   {
-    number: "100+",
+    number: "80+",
     title: "Members",
     link: {
       to: "/team",

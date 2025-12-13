@@ -94,12 +94,10 @@ function Newsletter() {
                         transition duration-300 ease-in-out
                     "
                 >
-                    {/* Placeholder for WhatsApp Icon */}
-                    {/* <FaWhatsapp className="mr-2" /> */}
+
                     {whatsapp.label}
                 </a>
 
-                {/* DISCORD BUTTON (Replaces Subscribe Button) */}
                 <a
                     href={discord.link}
                     target="_blank"

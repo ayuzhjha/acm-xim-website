@@ -30,6 +30,33 @@ const events = [
     gallery: [],
   },
   {
+    id: "Clash of Code",
+    title: "Clash of Code",
+    posterImg: "/assets/events/placeholder/quiz.png",
+    backgroundImg: "/assets/events/placeholder/quiz-bg.jpg",
+    venue: "CR 301, 3rd Floor, NAB, XIM University",
+    time: "July 20, 2025 · 3:00 PM – 4:30 PM",
+    session: "2025-26",
+    type: "Coding Competition",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSd94m31etLNSASL5WEk-SYaFtpAwPybs8kDmraW5ZLyHVSi-w/viewform?usp=sharing&ouid=101810836675428734315",
+    rulebook: "#",
+    description:
+      "Clash of Code is a competitive coding event designed to test problem-solving skills, logic, and coding speed. The event is conducted in two formats: a 1 vs 1 coding battle exclusively for senior students, and a group-based coding challenge where teams compete to solve problem statements collaboratively. The competition encourages logical thinking, teamwork, and efficient coding under time constraints.",
+    rulesAndRegulation: [
+      "The 1 vs 1 coding round is open only to senior students.",
+      "The group coding round is open to all registered participants.",
+      "Each participant or team must solve the given problems within the allotted time.",
+      "Use of unfair means or plagiarism will lead to immediate disqualification.",
+      "Judging will be based on correctness, efficiency, and submission time.",
+    ],
+    leaderboard: [
+      { name: "Sai Subham Sahoo (Senior Group) & Roni Thomas (Jr Group)", prize: "1st Place (Tech Gift)" },
+      { name: "Koyena ( Senior Group) &  Vansh (Jr Group)", prize: "2nd Place (ACM Certificate)" },
+    ],
+    gallery: [],
+  },
+
+  {
     id: "pythonverse-2025",
     title: "PythonVerse: Coding & Project Challenge",
     posterImg: "/assets/events/placeholder/python.png",
@@ -38,7 +65,7 @@ const events = [
     time: "September 25, 2025 | 4:00 PM – 6:00 PM",
     session: "2025-26",
     type: "Coding Competition",
-    registrationLink: "#",
+    registrationLink: "https://forms.gle/Gret6JvCYEHLJv6KA",
     rulebook: "#",
     description:
       "A comprehensive Python competition with three distinct tracks: standard coding problems, implementation of DSA concepts, and a 'Project Void' round where participants must debug and complete a partially written Python application (project).",
@@ -49,7 +76,10 @@ const events = [
       "Use of generative AI for code completion is strictly prohibited.",
       "Winners are judged based on score across all tracks and time efficiency.",
     ],
-    leaderboard: [],
+    leaderboard: [
+      { name: "Koyena Sutradhar & Mrinalee Mishra", prize: "1st Place (Tech Gift)" },
+      { name: "Pushkar Singh & Prashant Kumar", prize: "2nd Place (ACM Certificate)" },
+    ],
     gallery: [],
   },
   {
@@ -61,7 +91,7 @@ const events = [
     time: "October 26, 2025 · 9:00 AM – 5:00 PM",
     session: "2025-26",
     type: "Design Challenge",
-    registrationLink: "#",
+    registrationLink: "https://forms.gle/4KjJ2DAANuEBAxVC9",
     rulebook: "#",
     description:
       "An online web design competition where participants are challenged to build a creative and fully responsive website based on a given theme (e.g., 'Digital India', 'National Heritage'), utilizing modern HTML, CSS, and JavaScript.",
@@ -71,7 +101,11 @@ const events = [
       "Submissions must be made via a publicly accessible link (e.g., GitHub Pages, Netlify).",
       "Evaluation criteria: Aesthetics, Responsiveness, and Code Quality.",
     ],
-    leaderboard: [],
+    leaderboard: [
+      { name: "Aditya bhaginath Kurhade (GH Raisoni College of Engineering)", prize: "1st Place (ACM Certificate)" },
+      { name: "Pratyush Jha (Delhi Technical Campus)", prize: "2nd Place (ACM Certificate)" },
+      { name: "Samina Sultana (Sitare University)", prize: "3rd Place (ACM Certificate)" },
+    ],
     gallery: [],
   },
   {
@@ -93,7 +127,11 @@ const events = [
       "Each section is strictly time-bound.",
       "Winners are decided based on the number of correct answers and the time taken for completion.",
     ],
-    leaderboard: [],
+    leaderboard: [
+      { name: "Vashisth Tanikella ", prize: "1st Place (ACM Certificate + Medals )" },
+      { name: "Sai Suman Hota", prize: "2nd Place (ACM Certificate + Medals)" },
+      // { name: "Anupam Choudhary (XIM University)", prize: "3rd Place (ACM Certificate)" },
+    ],
     gallery: [],
   },
 
