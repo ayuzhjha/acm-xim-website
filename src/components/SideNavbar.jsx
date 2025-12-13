@@ -24,16 +24,21 @@ function SideNavbar({ isOpen, setIsOpen }) {
 
 	return (
 		<div
-			className={`fixed top-0 w-full h-full bg-white backdrop-blur-sm  ${
-				isOpen ? "left-0" : "left-[220dvw]"
-			}  z-50 overflow-hidden flex flex-col justify-between transition-all ease-in-out duration-500 shadow-2xl/30 `}
+			className={`fixed top-0 w-full h-full bg-white backdrop-blur-sm  ${isOpen ? "left-0" : "left-[220dvw]"
+				}  z-50 overflow-hidden flex flex-col justify-between transition-all ease-in-out duration-500 shadow-2xl/30 `}
 		>
 			<div className="relative w-full mx-auto flex flex-col gap-4 h-full items-start justify-between py-1 xl:py-2 3xl:py-3 px-4 sm:px-6">
 				<motion.div className="w-full md:min-h-[55%] h-full rounded-2xl mt-1 md:mt-2 relative">
 					<motion.div
 						layout
-						className={`hidden md:block ${navImage} rounded-2xl absolute inset-0`}
-					></motion.div>
+						className={`hidden md:block rounded-2xl absolute inset-0 overflow-hidden bg-neutral-100`}
+					>
+						{navImage.startsWith("bg-") ? (
+							<div className={`w-full h-full ${navImage}`}></div>
+						) : (
+							<img src={navImage} alt="Preview" className="w-full h-full object-cover" />
+						)}
+					</motion.div>
 					<div>
 						<button
 							className="font-inter right-0 absolute"
@@ -73,11 +78,10 @@ function SideNavbar({ isOpen, setIsOpen }) {
 							}}
 							key={index}
 							href={link.link}
-							className={`group flex p-1 xl:p-2 3xl:p-3 4xl:p-4 items-center relative text-5xl w-fit  ${
-								hover
-									? "md:hover:text-blue-600 md:text-neutral-500 hover:blur-none blur-[0.5px]"
-									: ""
-							} transition-all ease-in-out duration-400 cursor-pointer`}
+							className={`group flex p-1 xl:p-2 3xl:p-3 4xl:p-4 items-center relative text-5xl w-fit  ${hover
+								? "md:hover:text-blue-600 md:text-neutral-500 hover:blur-none blur-[0.5px]"
+								: ""
+								} transition-all ease-in-out duration-400 cursor-pointer`}
 						>
 							<span className="">{link.name}</span>
 							{/* <span className="absolute left-0 bottom-4 h-1 w-0 group-hover:w-full bg-blue-500/80 transtition ease-in-out duration-300"></span> */}

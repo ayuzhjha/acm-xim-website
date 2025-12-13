@@ -6,7 +6,7 @@ import {
 	workshopLinks,
 	developerLinks,
 	connectLinks,
-  socialLinks,
+	socialLinks,
 	termsLinks,
 } from "../../lib/data/landing-page/footer.data";
 
@@ -73,7 +73,7 @@ function FooterComponent() {
 			{/* SOCIALS AND CONNECT */}
 			<div className="h-full w-full col-span-1 flex flex-col gap-4 ">
 				<div className="uppercase text-neutral-100 font-semibold">
-					Developers
+					Documents
 				</div>
 				{developerLinks.map((item, i) => (
 					<div className="flex gap-2" key={i}>

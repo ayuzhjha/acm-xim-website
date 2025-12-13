@@ -1,44 +1,44 @@
-import NL123 from "/src/assets/nl123.jpg";
-import W14 from "/src/assets/w14.jpg"
-import Star from "/src/assets/star.jpg"
-import Snoppy from "/src/assets/snoppy1.jpg"
+import FeaturedProjectImage from "/src/assets/nl123.jpg";
+import WebDevImage from "/src/assets/project_2.png";
+import AIMLImage from "/src/assets/project_dev.png";
+import MerchImage from "/src/assets/merch.png";
 
 export const merchandise = [
   {
     title: "ACM XIM Winter Hoodie",
-    img: Snoppy,
+    img: MerchImage,
     tags: "Hoodie",
     tagColor: "bg-blue-200",
     description:
-      "Premium fleece-lined ACM XIM Winter Hoodie designed for comfort and warmth. Perfect for events, coding marathons, and everyday campus wear.",
-    price: 1199,
-    date: "Dec 2024",
+      "Stay warm and sharp. Premium fleece for coding marathons and campus comfort.",
+    price: "8??",
+    date: "Dec 2025",
   },
   {
     title: "ACM XIM Signature Jacket",
-    img: Snoppy,
+    img: MerchImage,
     tags: "Jacket",
     tagColor: "bg-violet-200",
     description:
-      "A stylish ACM XIM varsity-style winter jacket featuring durable fabric, embroidered chapter branding, and an all-weather design.",
-    price: 1799,
-    date: "Dec 2024",
+      "The official varsity-style chapter jacket. Durable fabric with embroidered branding.",
+    price: "8??",
+    date: "Dec 2025",
   },
   {
     title: "ACM Winter Edition T-Shirt",
-    img: Snoppy,
+    img: MerchImage,
     tags: "T-Shirt",
     tagColor: "bg-green-200",
     description:
-      "Limited-edition ACM XIM winter T-shirt crafted from soft breathable cotton. A perfect blend of minimal design and chapter identity.",
-    price: 699,
-    date: "Dec 2024",
+      "Minimal design, maximum comfort. Soft, breathable cotton limited edition tee.",
+    price: "5??",
+    date: "Dec 2025",
   },
 ];
 
 const featured = {
   title: "Smart Campus Navigator – AI-Powered Indoor Mapping",
-  img: NL123,
+  img: FeaturedProjectImage,
   tags: "Project",
   description:
     "A real-time campus navigation system built using image processing and pathfinding algorithms. The project helps students locate classrooms, labs, and campus facilities with ease.",
@@ -48,7 +48,7 @@ const featured = {
 const otherNewsLetter = [
   {
     title: "Music Genre Classifier using Deep Learning",
-    img: Snoppy,
+    img: AIMLImage,
     tags: "AI / ML",
     tagColor: "bg-blue-200",
     description:
@@ -57,7 +57,7 @@ const otherNewsLetter = [
   },
   {
     title: "Personal Expense Tracker – Full-Stack Web App",
-    img: Snoppy,
+    img: WebDevImage,
     tags: "Web Development",
     tagColor: "bg-violet-200",
     description:
@@ -66,7 +66,7 @@ const otherNewsLetter = [
   },
   {
     title: "IoT Smart Agriculture Monitor",
-    img: Snoppy,
+    img: AIMLImage,
     tags: "IoT",
     tagColor: "bg-green-200",
     description:
@@ -75,7 +75,7 @@ const otherNewsLetter = [
   },
   {
     title: "AI Resume Analyzer for Recruiters",
-    img: Star,
+    img: AIMLImage,
     tags: "AI / ML",
     tagColor: "bg-violet-200",
     description:
@@ -84,7 +84,7 @@ const otherNewsLetter = [
   },
   {
     title: "E-Commerce Website with Recommendation System",
-    img: W14,
+    img: WebDevImage,
     tags: "Web Development",
     tagColor: "bg-blue-200",
     description:
@@ -93,7 +93,7 @@ const otherNewsLetter = [
   },
   {
     title: "Social Media Sentiment Dashboard",
-    img: Star,
+    img: AIMLImage,
     tags: "Data Science",
     tagColor: "bg-blue-200",
     description:
@@ -102,7 +102,7 @@ const otherNewsLetter = [
   },
   {
     title: "JavaScript Visualizer – Learn JS Internals",
-    img: W14,
+    img: WebDevImage,
     tags: "Web Development",
     tagColor: "bg-blue-200",
     description:
@@ -111,7 +111,7 @@ const otherNewsLetter = [
   },
   {
     title: "Quantum Computing Simulator (Beginner Friendly)",
-    img: Star,
+    img: AIMLImage,
     tags: "Research",
     tagColor: "bg-violet-200",
     description:
@@ -120,7 +120,7 @@ const otherNewsLetter = [
   },
   {
     title: "AI Learning Path Generator",
-    img: W14,
+    img: WebDevImage,
     tags: "Education",
     tagColor: "bg-yellow-200",
     description:
@@ -129,7 +129,7 @@ const otherNewsLetter = [
   },
   {
     title: "Ethical AI Toolkit for Schools",
-    img: Star,
+    img: AIMLImage,
     tags: "Education",
     tagColor: "bg-yellow-200",
     description:
@@ -138,7 +138,7 @@ const otherNewsLetter = [
   },
   {
     title: "Women in Tech – Innovation Spotlight",
-    img: W14,
+    img: WebDevImage,
     tags: "Community",
     tagColor: "bg-green-200",
     description:
@@ -147,7 +147,7 @@ const otherNewsLetter = [
   },
   {
     title: "Tech Collaborators Hub – Global Project Network",
-    img: Star,
+    img: AIMLImage,
     tags: "Community",
     tagColor: "bg-green-200",
     description:

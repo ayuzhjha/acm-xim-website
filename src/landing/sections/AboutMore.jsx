@@ -1,14 +1,18 @@
 import React from "react";
-import {MoreAbout} from "../../lib/data/landing-page/about-and-highlights.data"
+import { MoreAbout } from "../../lib/data/landing-page/about-and-highlights.data"
 
-const team = "src/assets/team-jpg.png"
+const img6 = "src/assets/homepage_photo/img_6_.png"
+const img1 = "src/assets/homepage_photo/img_1_.jpg"
+const img2 = "src/assets/homepage_photo/img_2_.jpg"
+const img3 = "src/assets/homepage_photo/img_3_.jpg"
+const img4 = "src/assets/homepage_photo/img_4_.jpg"
+const img5 = "src/assets/homepage_photo/img_5_.jpg"
 
 const AboutMore = () => {
   return (
-    
     <div className="py-6 pb-16 px-max flex flex-col gap-8 xl:gap-18 mx-auto max-w-[95rem]">
       <div className="flex flex-col gap-4 lg:gap-6 px-max max-w-[78rem] mx-auto ">
-          <h1 className="text-base text-wrap lg:text-2xl font-inter font-medium  text-neutral-600">
+        <h1 className="text-base text-wrap lg:text-2xl font-inter font-medium text-neutral-600">
           {MoreAbout[0]}
         </h1>
         <p className=" text-base text-wrap lg:text-lg ml-auto text-right font-inter max-w-3xl text-neutral-600">
@@ -16,18 +20,32 @@ const AboutMore = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 px-max mb-12">
-        <div className="h-[26rem] w-full rounded-2xl bg-neutral-200"></div>
-        <div className="h-[26rem] w-full rounded-2xl bg-neutral-200"></div>
-        <div className="h-[26rem] w-full rounded-2xl bg-neutral-200"></div>
-        <div className="h-[26rem] w-full rounded-2xl bg-neutral-200"></div>
-        <div className="h-[26rem] w-full rounded-2xl bg-neutral-50 p-10">
-          <img src={team} alt="" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-max mb-12">
+        <ImageCard src={img1} alt="Image 1" />
+        <ImageCard src={img2} alt="Image 2" />
+        <ImageCard src={img3} alt="Image 3" />
+        <ImageCard src={img4} alt="Image 4" />
+        <div className="h-[26rem] w-full rounded-2xl bg-neutral-50 p-10 flex items-center justify-center">
+          <img src={img6} alt="Team Illustration" className="w-full h-full object-contain" />
         </div>
-        <div className="h-[26rem] w-full rounded-2xl bg-neutral-200"></div>
+        <ImageCard src={img5} alt="Image 5" />
       </div>
     </div>
   );
 };
+
+/**
+
+ * @param {{src: string, alt: string}} props
+ */
+const ImageCard = ({ src, alt }) => (
+  <div className="h-[26rem] w-full rounded-2xl bg-neutral-200 overflow-hidden shadow-lg">
+    <img
+      src={src}
+      alt={alt}
+      className="w-full h-full object-cover transition duration-300 hover:scale-[1.05]"
+    />
+  </div>
+);
 
 export default AboutMore;

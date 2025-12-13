@@ -50,33 +50,42 @@ export const workshopLinks = [
   },
 ];
 
-/* ================= DEVELOPERS ================= */
+/* ================= DEVELOPERS/RESOURCES ================= */
 export const developerLinks = [
   {
     icon: ArrowUpRight,
     label: "ACM–XIM Chapter Documentation",
-    href: "/docs/acm-xim",
+    href: "/docs/acm-xim-chapter-guide",
   },
   {
     icon: ArrowUpRight,
-    label: "Developer Resources",
-    href: "/developers/resources",
+    label: "Developer Project Guidelines",
+    href: "/docs/project-guidelines",
+  },
+  {
+    icon: ArrowUpRight,
+    label: "ACM Global Technical Publications",
+    href: "https://dl.acm.org/",
   },
 ];
 
-/* ================= COMMUNITY ================= */
+/* ================= COMMUNITY/POLICY ================= */
 export const connectLinks = [
   {
     label: "Join the ACM–XIM Community",
-    href: "/community/join",
+    href: "/community/join-us",
   },
   {
-    label: "Code of Conduct",
+    label: "Code of Conduct (ACM International)",
     href: "https://www.acm.org/about-acm/policy-against-harassment",
   },
   {
-    label: "Chapter Policies",
-    href: "/policies",
+    label: "Membership & Benefits",
+    href: "/membership/benefits",
+  },
+  {
+    label: "Contact Chapter Leadership",
+    href: "/about/contact-us",
   },
 ];
 

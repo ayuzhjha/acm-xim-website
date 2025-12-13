@@ -6,16 +6,23 @@ import {
 	YoutubeIcon,
 } from "lucide-react";
 
-export const SideNavLinks = [
-	{ name: "Home", link: "/", img: "bg-red-500" },
-	{ name: "Events", link: "/events", img: "bg-blue-500" },
-	{ name: "Team", link: "/team", img: "bg-green-500" },
-		{ name: "Projects", link: "/projects", img: "bg-lime-500" },
-	{ name: "Gallery", link: "/gallery", img: "bg-purple-500" },
-	{ name: "Roadmap", link: "/roadmap", img: "bg-pink-500" },
+import nav1 from "/src/assets/navbar_img/nav1.jpg";
+import nav2 from "/src/assets/navbar_img/nav2.jpg";
+import nav3 from "/src/assets/navbar_img/nav3.jpg";
+import nav4 from "/src/assets/navbar_img/nav4.jpg";
+import nav5 from "/src/assets/navbar_img/nav5.jpg";
+import nav6 from "/src/assets/navbar_img/nav6.jpg";
 
-	{ name: "Membership", link: "/membership", img: "bg-stone-500" },
-	{ name: "Contact Us", link: "/contact", img: "bg-yellow-500" },
+export const SideNavLinks = [
+	{ name: "Home", link: "/", img: nav1 },
+	{ name: "Events", link: "/events", img: nav2 },
+	{ name: "Team", link: "/team", img: nav3 },
+	{ name: "Projects", link: "/projects", img: nav4 },
+	{ name: "Gallery", link: "/gallery", img: nav6 },
+	{ name: "Roadmap", link: "/roadmap", img: nav5 },
+
+	{ name: "Membership", link: "/membership", img: nav2 },
+	{ name: "Contact Us", link: "/contact", img: nav1 },
 ];
 
 export const Socials = [

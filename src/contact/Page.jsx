@@ -92,7 +92,7 @@ const Page = () => {
             <div className="h-full min-h-[520px] rounded-4xl overflow-hidden relative group">
               {/* Background Image – put this in /public/images/ */}
               <img
-                src="/images/acm-xim-community.jpg"
+                src="/src/assets/xim-university-bhubaneswar-featured.jpg"
                 alt="ACM XIM Student Chapter Community"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

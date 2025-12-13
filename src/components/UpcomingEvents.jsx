@@ -1,5 +1,5 @@
-import arco from "/src/assets/star.jpg";
-import mario from "/src/assets/astro.jpg";
+import dds from "/src/assets/upcoming_event/dds.png";
+import dataVisual from "/src/assets/upcoming_event/data_visual.png";
 import { motion } from "framer-motion";
 import { TextAnimate } from "./magicui/TextAnimate";
 import { BlurFade } from "./magicui/BlurFade";
@@ -9,18 +9,18 @@ import { ArrowUpRight } from "lucide-react";
 const events = [
 	{
 		id: 1,
-		image: arco,
-		title: "OMG! Arco is here!",
+		image: dds,
+		title: "OMG! DDS is here!",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque esse alias impedit mollitia fugit quaerat nihil aliquam.",
+			"Master the art of telling stories with data. Learn tools like Tableau or Power BI to transform complex datasets into insightful and beautiful visual reports.",
 		delay: 0.3,
 	},
 	{
 		id: 2,
-		image: mario,
-		title: "Marco Polo Mario",
+		image: dataVisual,
+		title: "DDS",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque esse alias impedit mollitia fugit quaerat nihil aliquam.",
+			"Intensive weekly coding practice session focusing on essential Data Structures and Algorithms. Sharpen your competitive programming skills with guided problem-solving.",
 		delay: 0.45,
 	},
 ];
@@ -30,13 +30,13 @@ export default function UpcomingEvents() {
 	return (
 		<div className="px-max py-20 flex flex-col gap-10 relative overflow-x-clip bg-stone-200">
 			<UpcomingEventsHeader />
-		<p className="text-sm md:text-base 2xl:text-lg font-inter mx-auto text-center max-w-4xl text-pretty text-neutral-600">
-  We are organizing an upcoming chapter event designed to provide participants
-  with hands-on learning, collaborative problem-solving, and meaningful technical
-  engagement. The event will bring together students from diverse backgrounds to
-  explore ideas, build solutions, and gain practical exposure in a structured and
-  inclusive environment.
-</p>
+			<p className="text-sm md:text-base 2xl:text-lg font-inter mx-auto text-center max-w-4xl text-pretty text-neutral-600">
+				We are organizing an upcoming chapter event designed to provide participants
+				with hands-on learning, collaborative problem-solving, and meaningful technical
+				engagement. The event will bring together students from diverse backgrounds to
+				explore ideas, build solutions, and gain practical exposure in a structured and
+				inclusive environment.
+			</p>
 
 			<UpcomingEventList events={events} />
 		</div>
