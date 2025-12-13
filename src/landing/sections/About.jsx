@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {TeamPhoto, AboutUs } from "../../lib/data/landing-page/about-and-highlights.data";
+import { TeamPhoto, AboutUs } from "../../lib/data/landing-page/about-and-highlights.data";
 
 export default function AboutSection() {
 	return (

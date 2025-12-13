@@ -1,4 +1,5 @@
 import React from "react";
+import AcmXimLogo from "../../assets/acm_logo.png";
 import { NavLink } from "react-router";
 import {
 	aboutLinks,
@@ -34,8 +35,12 @@ function FooterComponent() {
 	return (
 		<div className="w-full text-xs lg:text-sm 2xl:text-base grid grid-cols-1 md:grid-cols-4 gap-10 py-10 2xl:py-20   ">
 			{/* LOGO */}
-			<div className="h-full w-full col-span-1 text-blue-500 text-6xl font-bebas-neue ">
-				ACM <span className="text-neutral-100">XIM </span>{" "}
+			<div className="h-full w-full col-span-1 flex items-start">
+				<img
+					src={AcmXimLogo}
+					alt="ACM XIM Student Chapter Logo"
+					className="h-auto w-32 md:w-48 max-w-full"
+				/>
 			</div>
 
 			{/* ABOUT US */}

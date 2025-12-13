@@ -69,7 +69,7 @@ function LetsConnect() {
 
 function Newsletter() {
     const { main, highlight } = connectData.newsletter.heading;
-    const { description, whatsapp, discord } = connectData.newsletter; // Destructure new link data
+    const { description, whatsapp, discord } = connectData.newsletter; 
 
     return (
         <div className="pt-24 pb-12 px-4 md:px-0 font-inter">
@@ -82,7 +82,7 @@ function Newsletter() {
             </p>
 
             <div className="py-2 flex flex-col md:flex-row gap-4">
-                {/* WHATSAPP BUTTON (Replaces Email Form) */}
+                {/*  */}
                 <a
                     href={whatsapp.link}
                     target="_blank"
@@ -109,8 +109,6 @@ function Newsletter() {
                         transition duration-300 ease-in-out
                     "
                 >
-                    {/* Placeholder for Discord Icon */}
-                    {/* <FaDiscord className="mr-2" /> */}
                     {discord.label}
                 </a>
             </div>

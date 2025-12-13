@@ -1,5 +1,5 @@
 // About Us 
-export const AboutUs = "The ACM Student Chapter of XIM University (ACM–XIM) is an official student organization affiliated with the Association for Computing Machinery (ACM), the world’s largest professional computing society. The chapter fosters technical learning and a strong coding culture through the organization of coding contests, hackathons, workshops, seminars, aptitude challenges, and entrepreneurship-focused programs across emerging domains such as Web Development, Artificial Intelligence, Machine Learning, IoT, and Cloud Computing. With participation from students across 50+ colleges nationwide, ACM–XIM provides a collaborative platform that encourages innovation, skill development, leadership, and meaningful engagement with technology. ";
+export const AboutUs = "The ACM Student Chapter of XIM University (ACM–XIM) is an official student organization affiliated with the Association for Computing Machinery (ACM). It serves as a collaborative platform that promotes a strong coding and technical culture through contests, hackathons, workshops, and seminars in areas such as Web Development, AI, ML, IoT, and Cloud Computing.";
 export const TeamPhoto = "https://i.ibb.co/V95MszS/xim-acm.jpg";
 
 

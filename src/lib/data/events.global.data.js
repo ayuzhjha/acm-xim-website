@@ -11,7 +11,7 @@ const events = [
   {
     id: "orientation-2025-26",
     title: "ACM Chapter Orientation 2025-26",
-    posterImg: "/assets/events/placeholder/quiz.png",
+    posterImg: "src/assets/home_event_pic/orientation_img.png",
     backgroundImg: "/assets/events/placeholder/quiz-bg.jpg",
     venue: "CR 301, 3rd Floor, NAB, XIM University",
     time: "July 20, 2025 · 3:00 PM – 4:30 PM",

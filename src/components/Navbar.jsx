@@ -4,6 +4,8 @@ import { Link } from "react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import SideNavbar from "./SideNavbar";
 
+import AcmXimLogo from "../assets/acm_logo.png";
+
 const DDS_PLATFORM_URL = "https://acc-seven-theta.vercel.app/";
 
 const Links = [
@@ -33,12 +35,13 @@ const Navbar = () => {
       <div className="w-full max-w-[90rem] mx-auto flex justify-between gap-12 items-center relative">
         <a
           href="/"
-          className="text-3xl xl:text-4xl flex gap-1 font-bold relative text-black-500/90 "
+          className="flex items-center"
         >
-          <h1>ACM</h1>
-          <div>
-            <span className="text-blue-500">XIM</span>
-          </div>
+          <img
+            src={AcmXimLogo}
+            alt="ACM XIM Student Chapter Logo"
+            className="h-12 md:h-16 w-auto object-contain"
+          />
         </a>
 
         {/* MIDDLE LINKS */}
