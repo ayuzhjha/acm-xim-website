@@ -1,9 +1,9 @@
-import img from "/src/assets/img.jpg";
-import img1 from "/src/assets/astro.jpg";
-import img2 from "/src/assets/img2.jpg";
-import img3 from "/src/assets/btmn.png";
-import img4 from "/src/assets/snoppy1.jpg";
-import img5 from "/src/assets/legobatman.jpg";
+import nav1 from "/src/assets/navbar_img/nav1.jpg";
+import nav2 from "/src/assets/navbar_img/nav2.jpg";
+import nav3 from "/src/assets/navbar_img/nav3.jpg";
+import nav4 from "/src/assets/navbar_img/nav4.jpg";
+import nav5 from "/src/assets/navbar_img/nav5.jpg";
+import nav6 from "/src/assets/navbar_img/nav6.jpg";
 
 // Main Gallery Imports
 import main1 from "/src/assets/Main_gallery/9d3537bb-2dba-4b52-81e2-17a52f5b26ad.jpg";
@@ -52,15 +52,15 @@ import main40 from "/src/assets/Main_gallery/IMG_3501.jpg";
 
 const galleryRows = {
     upper: {
-        images: [img, img, img, img, img],
+        images: [nav1, nav2, nav1, nav2, nav1],
         animation: "marquee-right 60s linear infinite",
     },
     middle: {
-        images: [img1, img1, img1, img1, img1],
+        images: [nav3, nav4, nav3, nav4, nav3],
         animation: "marquee-left 60s linear infinite",
     },
     lower: {
-        images: [img2, img2, img2],
+        images: [nav5, nav6, nav5, nav6, nav5],
         animation: "marquee-right 70s linear infinite",
     },
 };

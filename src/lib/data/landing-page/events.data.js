@@ -1,29 +1,27 @@
-import arco from "/src/assets/arco.jpg";
-import mario from "/src/assets/mario.jpg";
-import astro from "/src/assets/astro.jpg";
-import savage from "/src/assets/savage.jpg";
-import img from "/src/assets/img.jpg";
-import img1 from "/src/assets/img1.jpg";
-import img2 from "/src/assets/img2.jpg";
-import img3 from "/src/assets/img3.jpg";
+import dds from "/src/assets/upcoming_event/dds.png";
+import dataVisual from "/src/assets/upcoming_event/data_visual.png";
+import codeTiranga from "/src/assets/home_event_pic/code-tiranga.png";
+import clashOfCodes from "/src/assets/home_event_pic/clashofcodes.png";
+import mindSpark from "/src/assets/home_event_pic/mindspark.png";
+import pythonVerse from "/src/assets/home_event_pic/pythonverse.png";
 
 // * Upcoming Events (for landing sections)
 export const UpcomingEventsData = [
   {
-    id: "codesprint-5",
-    image: arco,
-    title: "CodeSprint 5.0",
+    id: "Data Visualization",
+    image: dataVisual,
+    title: "Data Visualization",
     description:
-      "Annual ACM XIM coding marathon featuring multiple rounds of competitive programming and problem-solving.",
+      "Data visualization challenge to sharpen critical thinking for technical interviews.",
     delay: 0.3,
     session: "2025-26",
   },
   {
-    id: "genai-talk-2025",
-    image: mario,
-    title: "TechTalk: GenAI & the Future",
+    id: "DDS",
+    image: dds,
+    title: "DSA DRILL SATURDAY",
     description:
-      "An expert-led deep dive into Generative AI, LLMs, and the opportunities & risks of modern AI.",
+      "DSA drill Saturday to sharpen critical thinking for technical interviews.",
     delay: 0.45,
     session: "2025-26",
   },
@@ -34,76 +32,40 @@ export const UpcomingEventsDataMobile = UpcomingEventsData;
 // * Previous Events (highlights for older sessions)
 export const PreviousEventsData = [
   {
-    id: "synchro-3",
-    image: astro,
-    title: "SYNCHRONOISE 3.0 – Tech Fest",
+    id: "mind-spark-2-2025",
+    image: mindSpark,
+    title: "Mind Spark 2.0: Logical Aptitude Challenge",
     description:
-      "Two days of coding contests, design events, gaming, and industry interactions at ACM XIM’s flagship tech fest.",
-    date: "March 15–16, 2024",
-    session: "2024-25",
+      "Advanced aptitude and logical reasoning challenge to sharpen critical thinking for technical interviews.",
+    date: "November 8, 2025",
+    session: "2025-26",
   },
   {
-    id: "codesprint-4",
-    image: savage,
-    title: "CodeSprint 4.0",
+    id: "code-tiranga-2025",
+    image: codeTiranga,
+    title: "Code Tiranga: Web Designing Challenge",
     description:
-      "Competitive programming contest that challenged students with timed algorithmic problems.",
-    date: "February 10, 2024",
-    session: "2024-25",
+      "An online web design competition challenging participants to build a creative and fully responsive website.",
+    date: "October 26, 2025",
+    session: "2025-26",
   },
   {
-    id: "dsa-drill-2023",
-    image: img,
-    title: "DSA Drill Saturdays",
+    id: "pythonverse-2025",
+    image: pythonVerse,
+    title: "PythonVerse: Coding & Project Challenge",
     description:
-      "Weekly practice sessions focused on core DSA topics, problem patterns, and contest-style questions.",
-    date: "Aug – Nov 2023",
-    session: "2023-24",
+      "A comprehensive Python competition with tracks for standard coding, DSA, and project debugging.",
+    date: "September 25, 2025",
+    session: "2025-26",
   },
   {
-    id: "intro-acm-2023",
-    image: img1,
-    title: "ACM Chapter Orientation",
+    id: "Clash of Code",
+    image: clashOfCodes,
+    title: "Clash of Code",
     description:
-      "An introductory session on ACM, membership benefits, and the roadmap for ACM XIM Student Chapter.",
-    date: "July 20, 2023",
-    session: "2023-24",
-  },
-  {
-    id: "legacy-workshop-1",
-    image: img2,
-    title: "Intro to Web Development",
-    description:
-      "Hands-on workshop covering HTML, CSS, and JavaScript fundamentals for beginners.",
-    date: "October 2023",
-    session: "2023-24",
-  },
-  {
-    id: "legacy-workshop-2",
-    image: img3,
-    title: "Getting Started with Git & GitHub",
-    description:
-      "Practical session on version control, collaboration workflows, and open-source contributions.",
-    date: "November 2023",
-    session: "2023-24",
-  },
-  {
-    id: "legacy-session-3",
-    image: arco,
-    title: "Career Paths in Computer Science",
-    description:
-      "Panel discussion on career options in software, research, data science, and product roles.",
-    date: "January 2024",
-    session: "2024-25",
-  },
-  {
-    id: "legacy-session-4",
-    image: astro,
-    title: "ACM Problem-Solving Bootcamp",
-    description:
-      "Intensive bootcamp helping students strengthen logic building and problem-solving techniques.",
-    date: "December 2023",
-    session: "2023-24",
+      "A competitive coding event testing problem-solving skills, logic, and coding speed in 1v1 and group formats.",
+    date: "July 20, 2025",
+    session: "2025-26",
   },
 ];
 

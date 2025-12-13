@@ -53,11 +53,11 @@ export const connectData = {
 
     whatsapp: {
       label: "Join WhatsApp Group",
-      link: "YOUR_WHATSAPP_GROUP_INVITE_LINK_HERE",
+      link: "https://chat.whatsapp.com/KeIp4WIuUZz0LJgWw7J8wV",
     },
     discord: {
       label: "Join Discord Server",
-      link: "YOUR_DISCORD_INVITE_LINK_HERE",
+      link: "https://discord.com/invite/hCV9phzpQf",
     },
   },
   footer: {

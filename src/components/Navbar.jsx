@@ -11,6 +11,7 @@ const Links = [
   { name: "Team", link: "/team" },
   { name: "Gallery", link: "/gallery" },
   { name: "Projects", link: "/projects" },
+  { name: "DDS", link: "https://acc-seven-theta.vercel.app/" },
   { name: "Contact", link: "/contact" },
 ];
 

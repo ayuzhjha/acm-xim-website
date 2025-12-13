@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import { TextAnimate } from "./magicui/TextAnimate";
-import {UpcomingEventsDataMobile} from "../lib/data/landing-page/events.data"
+import { UpcomingEventsDataMobile } from "../lib/data/landing-page/events.data"
 
 
 const ONE_SECOND = 1000;
@@ -15,7 +15,7 @@ const SPRING_OPTIONS = {
   damping: 80,
 };
 
- const SwipeCarousel = () => {
+const SwipeCarousel = () => {
   const [imgIndex, setImgIndex] = useState(0);
 
   const dragX = useMotionValue(0);
@@ -78,12 +78,12 @@ const SPRING_OPTIONS = {
 const Images = ({ imgIndex }) => {
   return (
     <>
-      {UpcomingEventsDataMobile.map((imgSrc, idx) => {
+      {UpcomingEventsDataMobile.map((event, idx) => {
         return (
           <motion.div
             key={idx}
             style={{
-              backgroundImage: `url(${imgSrc})`,
+              backgroundImage: `url(${event.image})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -91,8 +91,13 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video w-[calc(100vw-1rem)] mx-2  shrink-0 rounded-xl bg-neutral-800 object-cover"
-          />
+            className="aspect-video w-[calc(100vw-1rem)] mx-2 shrink-0 rounded-xl bg-neutral-800 object-cover relative overflow-hidden"
+          >
+            <div className="absolute bottom-0 left-0 w-full p-4 pt-12 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+              <h3 className="text-white font-bold text-lg font-bebas-neue tracking-wide text-shadow-sm">{event.title}</h3>
+              <p className="text-neutral-200 text-xs font-inter line-clamp-2">{event.description}</p>
+            </div>
+          </motion.div>
         );
       })}
     </>
@@ -107,9 +112,8 @@ const Dots = ({ imgIndex, setImgIndex }) => {
           <button
             key={idx}
             onClick={() => setImgIndex(idx)}
-            className={`h-2 w-2 rounded-full transition-colors ${
-              idx === imgIndex ? "bg-neutral-500" : "bg-neutral-300"
-            }`}
+            className={`h-2 w-2 rounded-full transition-colors ${idx === imgIndex ? "bg-neutral-500" : "bg-neutral-300"
+              }`}
           />
         );
       })}
