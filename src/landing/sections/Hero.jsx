@@ -43,6 +43,9 @@ import React, { useState } from "react";
 import { ChevronDown, ChevronUp, Bell } from "lucide-react"; // Assuming we have lucide-react, otherwise use text
 
 import HeroImg from "../../assets/hero.png";
+import UpscaledVideo from "../../assets/upscaled-video.mp4";
+import XimImg from "../../assets/xim.png";
+import AccImg from "../../assets/acc.png";
 import BlurText from "../../components/BlurText";
 import NotificationCard from "../../components/NotificationCard";
 import "../../components/NotificationCard.css";
@@ -64,7 +67,7 @@ const Hero = () => {
           title="ACM Winter School"
           subtitle="15-24 Dec 2025"
           description="Register now to attend live sessions!"
-          image="src/assets/xim.png"
+          image={XimImg}
           delay={0}
           onClick={() => {
             const element = document.getElementById('acm-winter-school');
@@ -77,7 +80,7 @@ const Hero = () => {
           title="New Weekly DDS Challenge"
           subtitle="12:00 P.M."
           description="Click to join and solve the challenge"
-          image="src/assets/acc.png"
+          image={AccImg}
           delay={0.2}
           onClick={() => console.log("Joined Challenge")}
         />
@@ -106,7 +109,7 @@ const Hero = () => {
         muted
         playsInline
       >
-        <source src="src/assets/upscaled-video.mp4" type="video/mp4" />
+        <source src={UpscaledVideo} type="video/mp4" />
       </video>
 
       {/* Hero Image Overlay */}

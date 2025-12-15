@@ -1,7 +1,7 @@
 import React from "react";
 
-const img = "src/assets/acmws.jpg";
-const img2 = "src/assets/unnamed.jpg";
+import AcmWsImg from "../../assets/acmws.jpg";
+import UnnamedImg from "../../assets/unnamed.jpg";
 
 
 const HighlightHeader = () => {
@@ -35,7 +35,7 @@ const HighlightHeader = () => {
 					<div className="max-w-4xl w-full aspect-[3/2] md:aspect-[4/3] lg:aspect-[3/2]">
 						<div className="bg-neutral-200 shadow rounded-2xl h-full w-full">
 							{/* The image takes up 100% of the responsive container */}
-							<img src={img} className="rounded-2xl w-full h-full object-cover" alt="ACM India Winter School 2025 on Responsible AI" />
+							<img src={AcmWsImg} className="rounded-2xl w-full h-full object-cover" alt="ACM India Winter School 2025 on Responsible AI" />
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ const HighlightHeader = () => {
 					<div className="max-w-md w-full aspect-[3/4] sm:max-w-xs">
 						<div className=" rounded-2xl h-full w-full shadow-lg">
 
-							<img src={img2} className="rounded-2xl w-full h-full object-cover" alt="ACM India recognition for high number of activities in February 2024" />
+							<img src={UnnamedImg} className="rounded-2xl w-full h-full object-cover" alt="ACM India recognition for high number of activities in February 2024" />
 						</div>
 					</div>
 				</div>

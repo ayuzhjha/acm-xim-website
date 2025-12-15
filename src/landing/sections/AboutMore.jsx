@@ -1,12 +1,12 @@
 import React from "react";
 import { MoreAbout } from "../../lib/data/landing-page/about-and-highlights.data"
 
-const img6 = "src/assets/homepage_photo/img_6_.png"
-const img1 = "src/assets/homepage_photo/img_1_.jpg"
-const img2 = "src/assets/homepage_photo/img_2_.jpg"
-const img3 = "src/assets/homepage_photo/img_3_.jpg"
-const img4 = "src/assets/homepage_photo/img_4_.jpg"
-const img5 = "src/assets/homepage_photo/img_5_.jpg"
+import Img6 from "../../assets/homepage_photo/img_6_.png";
+import Img1 from "../../assets/homepage_photo/img_1_.jpg";
+import Img2 from "../../assets/homepage_photo/img_2_.jpg";
+import Img3 from "../../assets/homepage_photo/img_3_.jpg";
+import Img4 from "../../assets/homepage_photo/img_4_.jpg";
+import Img5 from "../../assets/homepage_photo/img_5_.jpg";
 
 const AboutMore = () => {
   return (
@@ -21,14 +21,14 @@ const AboutMore = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-max mb-12">
-        <ImageCard src={img1} alt="Image 1" />
-        <ImageCard src={img2} alt="Image 2" />
-        <ImageCard src={img3} alt="Image 3" />
-        <ImageCard src={img4} alt="Image 4" />
+        <ImageCard src={Img1} alt="Image 1" />
+        <ImageCard src={Img2} alt="Image 2" />
+        <ImageCard src={Img3} alt="Image 3" />
+        <ImageCard src={Img4} alt="Image 4" />
         <div className="h-[26rem] w-full rounded-2xl bg-neutral-50 p-10 flex items-center justify-center">
-          <img src={img6} alt="Team Illustration" className="w-full h-full object-contain" />
+          <img src={Img6} alt="Team Illustration" className="w-full h-full object-contain" />
         </div>
-        <ImageCard src={img5} alt="Image 5" />
+        <ImageCard src={Img5} alt="Image 5" />
       </div>
     </div>
   );
