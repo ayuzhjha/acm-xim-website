@@ -6,7 +6,7 @@ import SideNavbar from "./SideNavbar";
 
 import AcmXimLogo from "../assets/acm_logo.png";
 
-const DDS_PLATFORM_URL = "https://acc-seven-theta.vercel.app/";
+const DDS_PLATFORM_URL = "https://code.acmxim.space/";
 
 const Links = [
   { name: "Events", link: "/events" },
