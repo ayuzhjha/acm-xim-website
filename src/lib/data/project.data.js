@@ -1,7 +1,7 @@
-import FeaturedProjectImage from "/src/assets/nl123.jpg";
-import WebDevImage from "/src/assets/project_2.png";
-import AIMLImage from "/src/assets/project_dev.png";
-import MerchImage from "/src/assets/merch.png";
+import FeaturedProjectImage from "../../assets/nl123.jpg";
+import WebDevImage from "../../assets/project_2.png";
+import AIMLImage from "../../assets/project_dev.png";
+import MerchImage from "../../assets/merch.png";
 
 export const merchandise = [
   {

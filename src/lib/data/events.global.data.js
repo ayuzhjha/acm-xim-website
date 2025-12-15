@@ -24,6 +24,12 @@ import mindsparkG1 from "../../assets/Main_gallery/IMG-20250811-WA0005.jpg";
 import mindsparkG2 from "../../assets/Main_gallery/IMG-20250909-WA0018.jpg";
 import mindsparkG3 from "../../assets/Main_gallery/IMG-20251209-WA0016.jpg";
 
+import OrientationImg from "../../assets/home_event_pic/orientation_img.png";
+import ClashImg from "../../assets/home_event_pic/clashofcodes.png";
+import PythonImg from "../../assets/home_event_pic/pythonverse.png";
+import CodeTirangaImg from "../../assets/home_event_pic/code-tiranga.png";
+import MindSparkImg from "../../assets/home_event_pic/mindspark.png";
+
 // This contains the list of events (all sessions)
 // 2025-26 → current
 // 2024-25, 2023-24 → previous sessions
@@ -35,7 +41,7 @@ const events = [
   {
     id: "orientation-2025-26",
     title: "ACM Chapter Orientation 2025-26",
-    posterImg: "src/assets/home_event_pic/orientation_img.png",
+    posterImg: OrientationImg,
     backgroundImg: orientationBg,
     venue: "CR 301, 3rd Floor, NAB, XIM University",
     time: "July 20, 2025 · 3:00 PM – 4:30 PM",
@@ -60,7 +66,7 @@ const events = [
   {
     id: "Clash of Code",
     title: "Clash of Code",
-    posterImg: "src/assets/home_event_pic/clashofcodes.png",
+    posterImg: ClashImg,
     backgroundImg: clashBg,
     venue: "CR 301, 3rd Floor, NAB, XIM University",
     time: "July 20, 2025 · 3:00 PM – 4:30 PM",
@@ -91,7 +97,7 @@ const events = [
   {
     id: "pythonverse-2025",
     title: "PythonVerse: Coding & Project Challenge",
-    posterImg: "src/assets/home_event_pic/pythonverse.png",
+    posterImg: PythonImg,
     backgroundImg: pythonBg,
     venue: "Lab 5, 3rd Floor, NAB, XIM University",
     time: "September 25, 2025 | 4:00 PM – 6:00 PM",
@@ -121,7 +127,7 @@ const events = [
   {
     id: "code-tiranga-2025",
     title: "Code Tiranga: Web Designing Challenge",
-    posterImg: "src/assets/home_event_pic/code-tiranga.png",
+    posterImg: CodeTirangaImg,
     backgroundImg: tirangaBg,
     venue: "Online (Remote Submission)",
     time: "October 26, 2025 · 9:00 AM – 5:00 PM",
@@ -151,7 +157,7 @@ const events = [
   {
     id: "mind-spark-2-2025",
     title: "Mind Spark 2.0: Logical Aptitude Challenge",
-    posterImg: "src/assets/home_event_pic/mindspark.png",
+    posterImg: MindSparkImg,
     backgroundImg: mindsparkBg,
     venue: "Lab 5, 3rd Floor, NAB, XIM University",
     time: "November 8, 2025 | 4:00 PM – 5:00 PM",
