@@ -1,4 +1,4 @@
-import Img3 from "/src/assets/img1.jpg";
+import Img3 from "../../../assets/img1.jpg";
 
 
 // Data for projects

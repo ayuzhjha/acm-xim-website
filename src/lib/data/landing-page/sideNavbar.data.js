@@ -6,12 +6,12 @@ import {
 	YoutubeIcon,
 } from "lucide-react";
 
-import nav1 from "/src/assets/navbar_img/nav1.jpg";
-import nav2 from "/src/assets/navbar_img/nav2.jpg";
-import nav3 from "/src/assets/navbar_img/nav3.jpg";
-import nav4 from "/src/assets/navbar_img/nav4.jpg";
-import nav5 from "/src/assets/navbar_img/nav5.jpg";
-import nav6 from "/src/assets/navbar_img/nav6.jpg";
+import nav1 from "../../../assets/navbar_img/nav1.jpg";
+import nav2 from "../../../assets/navbar_img/nav2.jpg";
+import nav3 from "../../../assets/navbar_img/nav3.jpg";
+import nav4 from "../../../assets/navbar_img/nav4.jpg";
+import nav5 from "../../../assets/navbar_img/nav5.jpg";
+import nav6 from "../../../assets/navbar_img/nav6.jpg";
 
 export const SideNavLinks = [
 	{ name: "Home", link: "/", img: nav1 },

@@ -1,5 +1,5 @@
-import dds from "/src/assets/upcoming_event/dds.png";
-import dataVisual from "/src/assets/upcoming_event/data_visual.png";
+import dds from "../assets/upcoming_event/dds.png";
+import dataVisual from "../assets/upcoming_event/data_visual.png";
 import { motion } from "framer-motion";
 import { TextAnimate } from "./magicui/TextAnimate";
 import { BlurFade } from "./magicui/BlurFade";

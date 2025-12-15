@@ -1,9 +1,9 @@
-import dds from "/src/assets/upcoming_event/dds.png";
-import dataVisual from "/src/assets/upcoming_event/data_visual.png";
-import codeTiranga from "/src/assets/home_event_pic/code-tiranga.png";
-import clashOfCodes from "/src/assets/home_event_pic/clashofcodes.png";
-import mindSpark from "/src/assets/home_event_pic/mindspark.png";
-import pythonVerse from "/src/assets/home_event_pic/pythonverse.png";
+import dds from "../../../assets/upcoming_event/dds.png";
+import dataVisual from "../../../assets/upcoming_event/data_visual.png";
+import codeTiranga from "../../../assets/home_event_pic/code-tiranga.png";
+import clashOfCodes from "../../../assets/home_event_pic/clashofcodes.png";
+import mindSpark from "../../../assets/home_event_pic/mindspark.png";
+import pythonVerse from "../../../assets/home_event_pic/pythonverse.png";
 
 // * Upcoming Events (for landing sections)
 export const UpcomingEventsData = [

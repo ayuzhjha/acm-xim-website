@@ -1,7 +1,7 @@
 import React from "react";
 
-const img = "src/assets/acmws.jpg";
-const img2 = "src/assets/unnamed.jpg";
+import AcmWsImg from "../../assets/acmws.jpg";
+import UnnamedImg from "../../assets/unnamed.jpg";
 
 
 const HighlightHeader = () => {
@@ -12,21 +12,21 @@ const HighlightHeader = () => {
 
 
 			{/* NEW SECTION: ACM INDIA WINTER SCHOOL (FIRST SECTION) */}
-			<h2 className="font-bebas-neue font-bold text-6xl text-center pb-6">
+			<h2 id="acm-winter-school" className="font-bebas-neue font-bold text-6xl text-center pb-6">
 				ACM India{" "}
 				<span className="text-blue-500">Winter School 2025</span>
 			</h2>
 
-	<p className="text-sm md:text-base xl:text-lg text-center text-neutral-700">
-    ACM–XIM is scheduled to host the{" "}
-    <span className="text-blue-700">ACM India Winter School 2025</span> on the theme of{" "}
-    <span className="text-blue-700">Responsible AI</span>, exclusively for{" "}
-    <span className="text-blue-700">women participants</span>.
-    The program will run from{" "}
-    <span className="text-blue-700">December 15–24, 2025</span>, bringing together aspiring
-    students, researchers, and professionals for an intensive learning experience guided
-    by national-level experts in AI ethics, fairness, and accountability.
-</p>
+			<p className="text-sm md:text-base xl:text-lg text-center text-neutral-700">
+				ACM–XIM is scheduled to host the{" "}
+				<span className="text-blue-700">ACM India Winter School 2025</span> on the theme of{" "}
+				<span className="text-blue-700">Responsible AI</span>, exclusively for{" "}
+				<span className="text-blue-700">women participants</span>.
+				The program will run from{" "}
+				<span className="text-blue-700">December 15–24, 2025</span>, bringing together aspiring
+				students, researchers, and professionals for an intensive learning experience guided
+				by national-level experts in AI ethics, fairness, and accountability.
+			</p>
 
 			{/* FIRST SECTION IMAGE (Winter School) - UPDATED FOR RESPONSIVENESS */}
 			<div className="flex flex-col justify-between py-12 lg:py-14 2xl:py-16 max-w-[90rem] mx-auto">
@@ -35,7 +35,7 @@ const HighlightHeader = () => {
 					<div className="max-w-4xl w-full aspect-[3/2] md:aspect-[4/3] lg:aspect-[3/2]">
 						<div className="bg-neutral-200 shadow rounded-2xl h-full w-full">
 							{/* The image takes up 100% of the responsive container */}
-							<img src={img} className="rounded-2xl w-full h-full object-cover" alt="ACM India Winter School 2025 on Responsible AI" />
+							<img src={AcmWsImg} className="rounded-2xl w-full h-full object-cover" alt="ACM India Winter School 2025 on Responsible AI" />
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ const HighlightHeader = () => {
 					<div className="max-w-md w-full aspect-[3/4] sm:max-w-xs">
 						<div className=" rounded-2xl h-full w-full shadow-lg">
 
-							<img src={img2} className="rounded-2xl w-full h-full object-cover" alt="ACM India recognition for high number of activities in February 2024" />
+							<img src={UnnamedImg} className="rounded-2xl w-full h-full object-cover" alt="ACM India recognition for high number of activities in February 2024" />
 						</div>
 					</div>
 				</div>

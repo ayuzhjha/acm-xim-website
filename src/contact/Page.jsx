@@ -6,6 +6,7 @@ import {
   Youtube,
 } from "lucide-react";
 import React from "react";
+import AboutImg from "../assets/about-img-landing-ug-xim.jpg";
 
 const Page = () => {
   return (
@@ -89,7 +90,7 @@ const Page = () => {
           <div className="w-full h-full">
             <div className="h-full min-h-[520px] rounded-4xl overflow-hidden relative group">
               <img
-                src="/src/assets/about-img-landing-ug-xim.jpg"
+                src={AboutImg}
                 alt="ACM XIM Student Chapter Community"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
