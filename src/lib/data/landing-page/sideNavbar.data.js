@@ -19,7 +19,7 @@ export const SideNavLinks = [
 	{ name: "Team", link: "/team", img: nav3 },
 	{ name: "Projects", link: "/projects", img: nav4 },
 	{ name: "Gallery", link: "/gallery", img: nav6 },
-	{ name: "DDS Platform", link: "https://acc-seven-theta.vercel.app/", img: nav1 },
+	{ name: "DDS Platform", link: "https://code.acmxim.space/", img: nav1 },
 	// { name: "Roadmap", link: "/roadmap", img: nav5 },
 
 	{ name: "Membership", link: "/membership", img: nav2 },
