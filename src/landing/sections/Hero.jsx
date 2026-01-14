@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp, Bell } from "lucide-react"; // Assuming we have
 
 import HeroImg from "../../assets/hero.png";
 import UpscaledVideo from "../../assets/upscaled-video.mp4";
-import XimImg from "../../assets/xim.png";
+import Dataviz from "../../assets/datavizicon.png";
 import AccImg from "../../assets/acc.png";
 import BlurText from "../../components/BlurText";
 import NotificationCard from "../../components/NotificationCard";
@@ -25,17 +25,12 @@ const Hero = () => {
       {/* Notifications Wrapper */}
       <div className={`notification-wrapper transition-all duration-300 ${showMobileNotifications ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-4'} md:opacity-100 md:visible md:translate-y-0 md:block`}>
         <NotificationCard
-          title="ACM Winter School"
-          subtitle="15-24 Dec 2025"
-          description="Register now to attend live sessions!"
-          image={XimImg}
+          title="Data Viz Challenge"
+          subtitle="18 Jan 2026"
+          description="Register now to participate and win prizes!"
+          image={Dataviz}
           delay={0}
-          onClick={() => {
-            const element = document.getElementById('acm-winter-school');
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
+          onClick={() => { window.location.href = "https://data-viz.acmxim.space" }}
         />
         <NotificationCard
           title="New Weekly DDS Challenge"
@@ -43,7 +38,7 @@ const Hero = () => {
           description="Click to join and solve the challenge"
           image={AccImg}
           delay={0.2}
-          onClick={() => console.log("Joined Challenge")}
+          onClick={() => { window.location.href = "https://code.acmxim.space" }}
         />
       </div>
 
